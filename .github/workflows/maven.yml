@@ -32,3 +32,6 @@ jobs:
       
     - name: Compilar projeto
       run: mvn compile
+      
+    - name: Executando o projeto
+      run: java -cp target/classes org.example.Main

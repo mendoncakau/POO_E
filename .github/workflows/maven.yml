@@ -27,5 +27,8 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
+    - name: Pacotes do Maven
       run: mvn -B package --file pom.xml
+      
+    - name: Compilar projeto
+      run: mvn compile

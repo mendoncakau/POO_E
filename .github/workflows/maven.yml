@@ -42,7 +42,7 @@ jobs:
       with:
           image: kauem/aula_maven_action
           tags: 1.0, 1.1
-          registry: Docker.io
+          registry: docker.io
           dockerfile: dockerfile
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_PASSWORD }} 

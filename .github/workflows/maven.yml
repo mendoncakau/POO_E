@@ -35,3 +35,14 @@ jobs:
       
     - name: Executando o projeto
       run: java -cp target/classes org.example.Main
+      
+      
+    - uses: mr-smithers-excellent/docker-build-push@v6
+      name: Build & push Docker image
+      with:
+          image: kauem/aula_maven_action
+          tags: 1.0, 1.1
+          registry: Docker.io
+          dockerfile: Dockerfile.ci
+          username: ${{ secrets.DOCKER_USUARIO }}
+          password: ${{ secrets.DOCKER_SENHA }}

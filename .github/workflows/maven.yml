@@ -44,5 +44,5 @@ jobs:
           tags: 1.0, 1.1
           registry: Docker.io
           dockerfile: Dockerfile.ci
-          username: ${{ secrets.DOCKER_USUARIO }}
-          password: ${{ secrets.DOCKER_SENHA }}
+          username: ${{ secrets.DOCKER_USER }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
